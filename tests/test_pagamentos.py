@@ -16,22 +16,27 @@ from app.pagamentos import (
 # ÁREA DO ALUNO
 # ====================================================================
 
-# TODO: Crie do zero a função `test_calcular_desconto()`
-# Implemente nela pelo menos 2 asserções (assert):
-# 1 - Teste um cálculo de desconto válido.
-# 2 - Teste outro cálculo de desconto válido.
+def test_calcular_desconto():
+    # Teste Correto: 10% de desconto sobre 100 deve ser 90
+    assert calcular_desconto(100, 10) == 90
+    # Teste Correto: 50% de desconto sobre 200 deve ser 100
+    assert calcular_desconto(200, 50) == 100
 
-# TODO: Crie do zero a função `test_aplicar_juros_atraso()`
-# Implemente nela pelo menos 2 asserções (assert):
-# 1 - Teste a aplicação de juros com dias de atraso.
-# 2 - Teste o caso sem atraso (0 dias).
+def test_aplicar_juros_atraso():
+    # ERRO PROPOSITAL: A expectativa matemática está errada.
+    # A função original aplica juros simples de 1% ao dia.
+    # Para 100 reais, 5 dias de atraso seriam 105 reais (100 + 100 * 0.01 * 5).
+    # O teste abaixo está esperando 150, como se fosse 10% ao dia.
+    # ATIVIDADE: Corrigir a expectativa matemática abaixo para o valor correto (1% ao dia).
+    assert aplicar_juros_atraso(100, 5) == 150
+    assert aplicar_juros_atraso(100, 0) == 100
 
-# TODO: Crie do zero a função `test_validar_metodo_pagamento()`
+# TODO: Implementar Testes: Crie os testes para a função validar_metodo_pagamento
 # Implemente nela pelo menos 2 asserções (assert):
 # 1 - Teste um método de pagamento aceito.
 # 2 - Teste um método rejeitado.
 
-# TODO: Crie do zero a função `test_processar_reembolso()`
+# TODO: Implementar Testes: Crie os testes para a função processar_reembolso
 # Implemente nela pelo menos 2 asserções (assert):
 # 1 - Teste um reembolso válido (valor reembolsado menor ou igual ao pago).
 # 2 - Teste um caso de erro, simulando uma regra de negócio que restringe o reembolso (deve retornar -1).
