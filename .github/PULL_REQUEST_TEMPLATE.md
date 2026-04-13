@@ -7,7 +7,7 @@
 | **Nome completo** | <!-- Ex: João da Silva Souza --> |
 | **Matrícula** | <!-- Ex: 2024001234 --> |
 | **Turma** | <!-- A (Segundas) ou B (Quintas) --> |
-| **Nome da branch** | <!-- Ex: lab11/JoaoSilva-2024001234 --> |
+| **Nome da branch** | <!-- Ex: pratica11/JoaoSilva-2024001234 --> |
 
 ---
 
@@ -15,7 +15,7 @@
 
 Marque todos os itens antes de submeter:
 
-- [ ] A branch segue o padrão `lab11/NomeSobrenome-Matricula`
+- [ ] A branch segue o padrão `pratica11/NomeSobrenome-Matricula`
 - [ ] O bug de `test_aplicar_juros_atraso` foi identificado e corrigido
 - [ ] `test_validar_metodo_pagamento` implementado com ≥ 2 asserts (aceito e rejeitado)
 - [ ] `test_processar_reembolso` implementado com ≥ 2 asserts (válido e -1)
